@@ -1,0 +1,2 @@
+<?php
+// ROUTER PRINCIPALE
