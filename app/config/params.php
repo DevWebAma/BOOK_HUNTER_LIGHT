@@ -1,7 +1,10 @@
 <?php
 
-// paramètre de connexion à la DB
+// Initialisation des zones dynamiques
+$title = '';
+$content = '';
 
+// paramètre de connexion à la DB
 define('DB_HOST', 'localhost:3306');
 define('DB_NAME', 'book_hunter_2024');
 define('DB_USER', 'root');
