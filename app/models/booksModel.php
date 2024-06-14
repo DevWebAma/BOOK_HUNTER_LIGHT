@@ -21,3 +21,4 @@ function findAll(PDO $connexion, int $limit = 6): array {
   $rs -> execute();
   return $rs->fetchAll(PDO::FETCH_ASSOC);
 }
+

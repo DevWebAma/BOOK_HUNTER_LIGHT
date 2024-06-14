@@ -13,7 +13,7 @@ function homeAction(PDO $connexion) {
 
 
   global $content, $title;
-  $title = 'HomePage';
+  $title = "HomePage";
   ob_start();
   include '../app/views/pages/home.php';
   $content = ob_get_clean();
