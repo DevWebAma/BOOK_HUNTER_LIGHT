@@ -3,12 +3,18 @@
 
 // route des books
 //pattern: /?books
-//CTRL: booksController
-//Action: indexAction
 if(isset($_GET['books'])) : 
-  include_once '../app/controllers/booksController.php';
-  \App\Controllers\BooksController\indexAction($connexion); 
+  include_once '../app/routers/books.php';
+ 
 
+
+// route des authors
+//pattern: /?authors
+//CTRL: authorController
+//Action: indexAction
+elseif(isset($_GET['authors'])) : 
+  include_once '../app/controllers/authorsController.php';
+  \App\Controllers\Authorscontroller\indexAction($connexion);
 
 // route home
 //pattern: /?home
